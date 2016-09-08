@@ -32,9 +32,9 @@ Partial Class frmMain
         Me.rdoMexico = New System.Windows.Forms.RadioButton()
         Me.rdoSouthAfrica = New System.Windows.Forms.RadioButton()
         Me.rdoBritish = New System.Windows.Forms.RadioButton()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnCalc = New System.Windows.Forms.Button()
         Me.lblTotal = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
         Me.grbCountries.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -46,7 +46,7 @@ Partial Class frmMain
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(94, 16)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "US &Dollars ($):"
+        Me.Label1.Text = "&US Dollars ($):"
         '
         'txtDollars
         '
@@ -70,7 +70,7 @@ Partial Class frmMain
         Me.grbCountries.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grbCountries.Name = "grbCountries"
         Me.grbCountries.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.grbCountries.Size = New System.Drawing.Size(267, 279)
+        Me.grbCountries.Size = New System.Drawing.Size(267, 239)
         Me.grbCountries.TabIndex = 2
         Me.grbCountries.TabStop = False
         Me.grbCountries.Text = "Change currency to:"
@@ -78,19 +78,19 @@ Partial Class frmMain
         'rdoCanadian
         '
         Me.rdoCanadian.AutoSize = True
-        Me.rdoCanadian.Location = New System.Drawing.Point(73, 37)
+        Me.rdoCanadian.Location = New System.Drawing.Point(73, 27)
         Me.rdoCanadian.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoCanadian.Name = "rdoCanadian"
         Me.rdoCanadian.Size = New System.Drawing.Size(84, 20)
         Me.rdoCanadian.TabIndex = 0
         Me.rdoCanadian.TabStop = True
-        Me.rdoCanadian.Text = "&Canadian"
+        Me.rdoCanadian.Text = "Cana&dian"
         Me.rdoCanadian.UseVisualStyleBackColor = True
         '
         'rdoEuro
         '
         Me.rdoEuro.AutoSize = True
-        Me.rdoEuro.Location = New System.Drawing.Point(73, 68)
+        Me.rdoEuro.Location = New System.Drawing.Point(73, 58)
         Me.rdoEuro.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoEuro.Name = "rdoEuro"
         Me.rdoEuro.Size = New System.Drawing.Size(54, 20)
@@ -102,7 +102,7 @@ Partial Class frmMain
         'rdoIndian
         '
         Me.rdoIndian.AutoSize = True
-        Me.rdoIndian.Location = New System.Drawing.Point(73, 98)
+        Me.rdoIndian.Location = New System.Drawing.Point(73, 88)
         Me.rdoIndian.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoIndian.Name = "rdoIndian"
         Me.rdoIndian.Size = New System.Drawing.Size(106, 20)
@@ -114,7 +114,7 @@ Partial Class frmMain
         'rdoJapan
         '
         Me.rdoJapan.AutoSize = True
-        Me.rdoJapan.Location = New System.Drawing.Point(73, 129)
+        Me.rdoJapan.Location = New System.Drawing.Point(73, 119)
         Me.rdoJapan.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoJapan.Name = "rdoJapan"
         Me.rdoJapan.Size = New System.Drawing.Size(122, 20)
@@ -126,7 +126,7 @@ Partial Class frmMain
         'rdoMexico
         '
         Me.rdoMexico.AutoSize = True
-        Me.rdoMexico.Location = New System.Drawing.Point(73, 160)
+        Me.rdoMexico.Location = New System.Drawing.Point(73, 150)
         Me.rdoMexico.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoMexico.Name = "rdoMexico"
         Me.rdoMexico.Size = New System.Drawing.Size(119, 20)
@@ -138,7 +138,7 @@ Partial Class frmMain
         'rdoSouthAfrica
         '
         Me.rdoSouthAfrica.AutoSize = True
-        Me.rdoSouthAfrica.Location = New System.Drawing.Point(73, 191)
+        Me.rdoSouthAfrica.Location = New System.Drawing.Point(73, 181)
         Me.rdoSouthAfrica.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoSouthAfrica.Name = "rdoSouthAfrica"
         Me.rdoSouthAfrica.Size = New System.Drawing.Size(141, 20)
@@ -150,7 +150,7 @@ Partial Class frmMain
         'rdoBritish
         '
         Me.rdoBritish.AutoSize = True
-        Me.rdoBritish.Location = New System.Drawing.Point(73, 222)
+        Me.rdoBritish.Location = New System.Drawing.Point(73, 212)
         Me.rdoBritish.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoBritish.Name = "rdoBritish"
         Me.rdoBritish.Size = New System.Drawing.Size(112, 20)
@@ -159,41 +159,41 @@ Partial Class frmMain
         Me.rdoBritish.Text = "&British (Pound)"
         Me.rdoBritish.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btnCalc
         '
-        Me.Button1.Location = New System.Drawing.Point(13, 343)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(267, 22)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnCalc.Location = New System.Drawing.Point(12, 304)
+        Me.btnCalc.Name = "btnCalc"
+        Me.btnCalc.Size = New System.Drawing.Size(267, 33)
+        Me.btnCalc.TabIndex = 3
+        Me.btnCalc.Text = "&Calculate"
+        Me.btnCalc.UseVisualStyleBackColor = True
         '
         'lblTotal
         '
         Me.lblTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTotal.Location = New System.Drawing.Point(13, 368)
+        Me.lblTotal.Location = New System.Drawing.Point(12, 340)
         Me.lblTotal.Name = "lblTotal"
         Me.lblTotal.Size = New System.Drawing.Size(267, 22)
         Me.lblTotal.TabIndex = 4
         Me.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Button2
+        'btnExit
         '
-        Me.Button2.Location = New System.Drawing.Point(13, 394)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(267, 22)
-        Me.Button2.TabIndex = 5
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnExit.Location = New System.Drawing.Point(12, 365)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(267, 33)
+        Me.btnExit.TabIndex = 5
+        Me.btnExit.Text = "E&xit"
+        Me.btnExit.UseVisualStyleBackColor = True
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(293, 428)
-        Me.Controls.Add(Me.Button2)
+        Me.ClientSize = New System.Drawing.Size(293, 404)
+        Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.lblTotal)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnCalc)
         Me.Controls.Add(Me.grbCountries)
         Me.Controls.Add(Me.txtDollars)
         Me.Controls.Add(Me.Label1)
@@ -218,7 +218,7 @@ Partial Class frmMain
     Friend WithEvents rdoIndian As RadioButton
     Friend WithEvents rdoEuro As RadioButton
     Friend WithEvents rdoCanadian As RadioButton
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnCalc As Button
     Friend WithEvents lblTotal As Label
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnExit As Button
 End Class
